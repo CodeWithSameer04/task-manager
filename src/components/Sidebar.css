@@ -1,0 +1,70 @@
+.sidebar {
+  position: fixed;
+
+  top: 12px;
+  left: 12px;
+
+  width: 220px;
+  height: calc(100vh - 24px); /* 12 top + 12 bottom */
+
+  background: #f8f9f6;
+  padding: 20px;
+
+  border-radius: 20px;
+}
+
+
+.sidebar-section {
+  font-size: 11px;
+  color: #aaa;
+  margin: 15px 0 10px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  color: #9aa5a0;
+}
+
+.sidebar-item span {
+  flex: 1;
+}
+
+.sidebar-item:hover {
+  background: #e8efe9;
+  color: #222;
+}
+
+/* Active dashboard */
+
+.sidebar-item.active {
+  background: #dff2e5;
+  color: #0f5132;
+  font-weight: 600;
+}
+
+/* Badge */
+
+.badge {
+  background: #0f5132;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+/* Logout */
+
+.logout {
+  color: #c0392b;
+}
+
+.logout:hover {
+  background: #fbeaea;
+}
