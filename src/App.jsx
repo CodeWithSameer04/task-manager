@@ -2,6 +2,7 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
 import './index.css'
 
 function App() {
@@ -13,8 +14,7 @@ function App() {
       <Navbar />
 
       <div className="main">
-        <h1>Dashboard</h1>
-        <p>Your content goes here.</p>
+        <Dashboard />
       </div>
     </>
   )

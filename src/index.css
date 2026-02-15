@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #a0a0a0be;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,6 +27,7 @@ body {
 
 .main {
   position: fixed;
+  color: black;
 
   top: 102px;     
 
@@ -38,7 +39,7 @@ body {
 
   overflow-y: auto;
 
-  background: #8d8d8dc4;
+  background: #f8f9f6;
   border-radius: 20px;
 }
 

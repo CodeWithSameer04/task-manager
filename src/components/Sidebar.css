@@ -11,14 +11,18 @@
   padding: 20px;
 
   border-radius: 20px;
+  color: #333;
 }
 
+/* Section titles */
 
 .sidebar-section {
   font-size: 11px;
   color: #aaa;
   margin: 15px 0 10px;
 }
+
+/* Sidebar items */
 
 .sidebar-item {
   display: flex;
@@ -30,21 +34,35 @@
 
   cursor: pointer;
   color: #9aa5a0;
+
+  transition: all 0.2s ease; /* smooth hover */
 }
 
 .sidebar-item span {
   flex: 1;
 }
 
-.sidebar-item:hover {
-  background: #e8efe9;
-  color: #222;
+.sidebar-item svg {
+  transition: 0.2s ease;
 }
 
-/* Active dashboard */
+.sidebar-item:hover svg {
+  transform: scale(1.1);
+}
+
+/* Hover effect (NO bg, bigger + bold) */
+
+.sidebar-item:hover {
+  background: transparent;
+  color: #222;
+
+  font-weight: 600;
+  transform: scale(1.05);
+}
+
+/* Active item */
 
 .sidebar-item.active {
-  background: #dff2e5;
   color: #0f5132;
   font-weight: 600;
 }
@@ -66,5 +84,5 @@
 }
 
 .logout:hover {
-  background: #fbeaea;
+  color: #922b21; /* Darker red */
 }
